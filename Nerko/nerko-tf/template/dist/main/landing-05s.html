@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nerko</title>
+        <meta name="description" content="NFT Marketplace Template">
+        <meta name="theme-color" content="#741ff5">
+
+        <!-- preload head styles -->
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="../assets/fonts/unicons/Unicons.woff?lkolxg" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+
+        <!-- <link rel="preload" href="../assets/css/theme/main.min.css" as="style"> -->
+
+        <!-- preload footer scripts -->
+        <link rel="preload" href="../assets/js/uikit.min.js" as="script">
+        <link rel="preload" href="../assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="../assets/js/jquery.min.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="../assets/js/feather.min.js" as="script">
+        <link rel="preload" href="../assets/js/typed.min.js" as="script">
+        <link rel="preload" href="../assets/js/anime.min.js" as="script">
+        <link rel="preload" href="../assets/js/app.js" as="script">
+        <link rel="preload" href="../assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="../assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="../assets/css/theme/main.min.css">
+
+        <!-- include scripts -->
+        <script src="../assets/js/uikit.min.js"></script>
+        <script src="../assets/js/uikit-components.js"></script>
+    </head>
+    <body class="uni-body">
+
+        <!-- Menu modal -->
+        <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+            <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+                <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
+                    <div class="uni-mobile-menu-content">
+                        <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                            <div class="uk-flex-1">
+                                <button aria-label="Close Menu" class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
+                                    <i class="uk-icon-small" data-feather="arrow-left"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                            </div>
+                            <div class="uk-flex-1"></div>
+                        </header>
+                        <hr class="uk-margin-remove">
+                        <div class="uk-card uk-card-small">
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-nav-header">Homepages</li>
+                                    <li><a href="landing-01.html">Landing 01</a></li>
+                                    <li><a href="landing-02.html">Landing 02</a></li>
+                                    <li><a href="landing-03.html">Landing 03</a></li>
+                                    <li><a href="landing-04.html">Landing 04</a></li>
+                                    <li><a href="landing-05.html">Landing 05</a></li>
+                                    <li class="uk-nav-header">Inner pages</li>
+                                    <li><a href="base.html">Base components</a></li>
+                                    <li><a href="connect-wallet.html">Connect wallet</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="404.html">404 page</a></li>
+                                    <li><a href="coming-soon.html">Coming soon</a></li>
+                                    <li class="uk-nav-header">Content &amp; Privacy</li>
+                                    <li><a href="terms.html">Terms of use</a></li>
+                                    <li><a href="privact.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User login modal -->
+        <div id="uni_user_login_modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog dark:uk-background-gray-100 dark:uk-text-gray-30">
+                <div class="uk-modal-close-full uk-position-small">
+                    <button aria-label="Close" class="uk-button uk-button-small uk-button-icon uk-button-danger uk-button-outline uk-radius-circle" type="button">
+                        <i class="uk-icon-small uk-text-unset" data-feather="x"></i>
+                    </button>
+                </div>
+                <div class="uk-container uk-container-xsmall">
+                    <div class="uk-section uk-width-medium@m uk-margin-auto uk-flex-column uk-flex-center" data-uk-height-viewport="">
+                        <div class="uk-card uk-panel">
+                            <ul class="uk-subnav uk-h2" data-uk-switcher="animation: uk-animation-slide-bottom-small, uk-animation-slide-top-small" hidden>
+                                <li><a href="#login">Log in</a></li>
+                                <li><a href="#register">Register</a></li>
+                                <li><a href="#forgot_password">Forgot Password</a></li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li>
+                                    <form class="uni-login-form uk-form-stacked uk-panel uk-width-1-1" action="?" method="post">
+                                        <h3 class="uk-h3 uk-text-center uk-margin-large-bottom@m">Sign in</h3>
+                                        <div class="uk-margin">
+                                            <label for="email-login" class="uk-form-label">Your email: <span class="uk-text-danger">*</span></label>
+                                            <input id="email-login" type="email" name="email" autocomplete="email" class="uk-input" value="user@example.com" required>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <label for="password-login" class="uk-form-label">Your password: <span class="uk-text-danger">*</span></label>
+                                            <input id="password-login" type="password" name="current-password" autocomplete="current-password" class="uk-input" value="12345678" required>
+                                        </div>
+                                        <div class="uk-margin uk-grid uk-flex-between uk-flex-middle" data-uk-grid>
+                                            <div class="uk-flex uk-flex-middle">
+                                                <input id="remember-login" type="checkbox" name="remember" class="uk-checkbox" checked>
+                                                <label for="remember-login" class="uk-form-label uk-margin-xsmall-left">Remember me?</label>
+                                            </div>
+                                            <div>
+                                                <a href="#user_reset_password" class="uk-link-line uk-text-small uk-text-bold" data-uk-switcher-item="2">
+                                                    <span>Forgot password</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin-medium">
+                                            <button type="submit" class="uk-button uk-button-primary uk-button-large@m uk-width-expand">Log in</button>
+                                        </div>
+                                        <div class="uk-grid uk-grid-xsmall uk-flex-center uk-text-xlarge uk-margin-medium-top@m" data-uk-grid>
+                                            <a aria-label="facebook" href="#facebook"><i class="brand-facebook-alt"></i></a>
+                                            <a aria-label="google" href="#google"><i class="brand-google"></i></a>
+                                            <a aria-label="twitter" href="#twitter"><i class="brand-twitter"></i></a>
+                                        </div>
+                                    </form>
+                                    <p class="uk-text-small uk-text-bold uk-text-center uk-margin-large-top@m">
+                                        Don't have an account? <a href="#user_sign_up" class="uk-link-line" data-uk-switcher-item="1"><span>Sign up</span></a>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <form class="uni-signup-form uk-form-stacked uk-panel uk-width-1-1" action="?" method="post">
+                                        <h3 class="uk-h3 uk-text-center uk-margin-large-bottom@m">Create an account</h3>
+                                        <div class="uk-margin">
+                                            <label for="name-signup" class="uk-form-label">Your name:</label>
+                                            <input id="name-signup" type="text" name="name" autocomplete="name" class="uk-input" value="thesalvare">
+                                        </div>
+                                        <div class="uk-margin-medium">
+                                            <label for="email-signup" class="uk-form-label">Your email: <span class="uk-text-danger">*</span></label>
+                                            <input id="email-signup" type="email" name="email" autocomplete="email" class="uk-input" value="user@example.com" required>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <label for="password-signup" class="uk-form-label">Your password: <span class="uk-text-danger">*</span></label>
+                                            <input id="password-signup" type="password" name="new-password" autocomplete="new-password" class="uk-input" value="12345678" required>
+                                        </div>
+                                        <div class="uk-margin-medium">
+                                            <button type="submit" class="uk-button uk-button-primary uk-button-large@m uk-width-expand">Sign up</button>
+                                        </div>
+                                        <div class="uk-grid uk-grid-xsmall uk-flex-center uk-text-xlarge uk-margin-medium-top@m" data-uk-grid>
+                                            <a aria-label="facebook" href="#facebook"><i class="brand-facebook-alt"></i></a>
+                                            <a aria-label="google" href="#google"><i class="brand-google"></i></a>
+                                            <a aria-label="twitter" href="#twitter"><i class="brand-twitter"></i></a>
+                                        </div>
+                                    </form>
+                                    <p class="uk-text-small uk-text-bold uk-text-center uk-margin-large-top@m">
+                                        You already have an account? <a href="#user_login" class="uk-link-line" data-uk-switcher-item="0"><span>Log in</span></a>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <form class="uk-form-stacked uk-panel uk-width-1-1" action="?" method="post">
+                                        <h3 class="uk-h3 uk-text-center uk-margin-large-bottom@m">Forgot password?</h3>
+                                        <div class="uk-margin">
+                                            <label for="email-reset" class="uk-form-label">Your email: <span class="uk-text-danger">*</span></label>
+                                            <input id="email-reset" type="email" name="email" class="uk-input" required>
+                                        </div>
+                                        <div class="uk-margin-top">
+                                            <button type="submit" class="uk-button uk-button-primary uk-button-large@m uk-width-expand">Reset my password</button>
+                                        </div>
+                                    </form>
+                                    <p class="uk-text-small uk-text-bold uk-text-center uk-margin-large-top@m">
+                                        Did you remember your password? <a href="#user_login" class="uk-link-line" data-uk-switcher-item="0"><span>Log in</span></a>.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User search modal -->
+        <div id="uni_search_modal" class="uk-modal-full uk-modal" data-uk-modal>
+            <div class="uk-modal-dialog dark:uk-background-white-5">
+                <button class="uk-modal-close-full uk-position-small dark:uk-text-white" type="button"><i data-feather="x"></i></button>
+                <div class="uk-container uk-container-xsmall">
+                    <div class="uk-section-2xlarge uk-width-2xlarge@m uk-margin-auto" data-uk-height-viewport="">
+                        <form class="search-form uk-search uk-search-large uk-width-1-1" action="./search-ajax.html" method="get">
+                            <input class="uk-search-input uk-text-center uk-border-bottom" type="search" name="s" autocomplete="off" placeholder="Search item or artist..">
+                            <div class="search-results uk-margin-medium-top uk-hidden">
+                                <div class="search-results-content uk-panel uk-hidden"></div>
+                                <div class="search-results-loading uk-flex-center uk-flex-middle uk-height-1-1">
+                                    <span class="uk-flex-center uk-flex-middle" data-uk-spinner="ratio: .8"></span>
+                                </div>
+                            </div>
+                            <noscript>
+                                <button aria-label="Submit" type="submit" class="uk-form-icon uk-form-icon-flip">
+                                    <i class="uk-icon-xsmall" data-feather="search"></i>
+                                </button>
+                            </noscript>
+                        </form>
+                        <div class="uk-text-small uk-text-center uk-margin-top uk-margin-large-top@m">Type your keyword and hit "enter" for search and hit "esc" to close!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap uk-overflow-hidden">
+
+            <!-- Hero: Header -->
+            <header class="uni-header">
+
+                <!-- Header navbar -->
+                <div class="uni-header-navbar" data-uk-sticky="top: 60; show-on-up: true; animation: uk-animation-slide-top">
+                    <div class="uk-container">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href="landing-01.html"> <img class="uk-visible dark:uk-hidden" width="120" src="../assets/images/nerko-light.svg" alt="Nerko" loading="lazy"> <img class="uk-hidden dark:uk-visible" width="120" src="../assets/images/nerko-dark.svg" alt="Nerko" loading="lazy"> </a>
+                                </div>
+
+                                <div class="uk-navbar-center">
+                                    <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-navbar-bound>
+                                        <li><a href="#uni_minting">Minting</a></li>
+                                        <li><a href="#uni_about">About</a></li>
+                                        <li><a href="#uni_collection">Collection</a></li>
+                                        <li><a href="#uni_roadmap">Roadmap</a></li>
+                                        <li><a href="#uni_team">Team</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-navbar-right uk-flex-right">
+                                    <div class="uk-navbar-item">
+
+                                        <!-- header: call to actions -->
+                                        <a href="#uni_user_login_modal" class="uk-button uk-button-outline uk-button-medium@m uk-button-primary dark:uk-text-gray-10 uk-margin-left uk-visible@m">
+                                            <span>Connect wallet</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a class="uk-link" href="#uni_mobile_menu" data-uk-toggle>
+                                            <span class="material-icons">menu</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dark/Light toggle -->
+            <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle" data-darkmode-toggle="">
+                <label class="switch">
+                    <span class="sr-only">Dark mode toggle</span>
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- Hero start -->
+            <div class="uni-hero uk-section-2xlarge uk-padding-2xlarge-bottom uk-panel uk-overflow-hidden dark:uk-background-gray-100 swiper-parent">
+                <div class="uk-position-top" data-uk-height-viewport="">
+                    <div class="uk-position-cover uk-background-cover uk-opacity-20" data-src="../assets/images/hero-image.jpg" data-uk-img></div>
+                    <div class="uk-position-cover uk-background-cover dark:uk-hidden" style="background: linear-gradient(to top, white 25%, transparent 75%)"></div>
+                    <div class="uk-position-cover uk-background-cover uk-hidden dark:uk-visible" style="background: linear-gradient(to top, var(--color-gray-100) 25%, transparent 75%)"></div>
+                </div>
+                <div class="uk-container">
+                    <div class="uk-panel">
+                        <img class="uk-position-top-right uk-text-primary uni-animation-bounce uni-animation-delay-large uk-hidden@s" width="42" src="../assets/images/objects/star-01.svg" alt="object" style="top: -16%; right: 24%" data-uk-svg data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
+                        <img class="uk-position-top-right uk-text-primary uni-animation-bounce uk-hidden@s" width="28" src="../assets/images/objects/star-01.svg" alt="object" style="top: -12%; right: 38%" data-uk-svg data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
+                        <img class="uk-position-top-right uk-text-primary uni-animation-bounce uk-visible@l" width="32" src="../assets/images/objects/star-01.svg" alt="object" style="top: 2%; right: 2%" data-uk-svg data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
+                        <img class="uk-position-top-left uk-text-secondary uni-animation-bounce uk-visible@l" width="32" src="../assets/images/objects/star-01.svg" alt="object" style="top: 2%; left: 2%" data-uk-svg data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
+                        <div class="uk-grid uk-grid-2xlarge@m uk-child-width-1-1@m" data-uk-grid="">
+                            <div>
+                                <div class="uk-panel uk-text-center uk-margin-top">
+                                    <h1 class="uk-h2 uk-h1@s uk-heading-d1@m uk-text-uppercase">
+                                        collect & sell <br class="uk-visible@m">
+                                        <span class="uk-text-gradient">Super rare NFTS</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden">
+                                    <img class="uk-position-top-right uk-text-secondary uni-animation-bounce uk-visible@l" width="48" src="../assets/images/objects/star-01.svg" alt="object" style="top: 6%; right: 9%" data-uk-svg data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
+                                    <img class="uk-position-top-left uk-text-primary uni-animation-bounce uk-visible@l" width="48" src="../assets/images/objects/star-01.svg" alt="object" style="top: 6%; left: 9%" data-uk-svg data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
+                                    <div class="uk-grid-xsmall uk-grid@m uk-flex-middle uk-flex-center uk-grid" data-uk-grid="">
+                                        <div class="uk-width-3-12 uk-width-4-12@m">
+                                            <div class="uk-grid-xsmall uk-grid@m uk-child-width-1-2@m uk-flex-middle uk-grid" data-uk-grid="">
+                                                <div class="uk-visible@m">
+                                                    <div>
+                                                        <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                            <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                                <canvas width="600" height="800"></canvas>
+                                                                <img src="../assets/images/collections/05.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-panel uk-grid-xsmall uk-grid@m uk-grid" data-uk-grid="">
+                                                        <div>
+                                                            <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                                <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                                    <canvas class="uk-visible@m" width="200" height="170"></canvas>
+                                                                    <canvas class="uk-hidden@m" width="300" height="298"></canvas>
+                                                                    <img src="../assets/images/collections/18.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                                <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                                    <canvas width="300" height="298"></canvas>
+                                                                    <img src="../assets/images/collections/04.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                    <canvas width="400" height="600"></canvas>
+                                                    <img src="../assets/images/collections/01.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-3-12 uk-width-4-12@m">
+                                            <div class="uk-grid-xsmall uk-grid@m uk-child-width-1-2@m uk-flex-middle uk-grid" data-uk-grid="">
+                                                <div>
+                                                    <div class="uk-panel uk-grid-xsmall uk-grid@m uk-grid" data-uk-grid="">
+                                                        <div>
+                                                            <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                                <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                                    <canvas width="300" height="298"></canvas>
+                                                                    <img src="../assets/images/collections/07.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                                <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                                    <canvas class="uk-visible@m" width="200" height="170"></canvas>
+                                                                    <canvas class="uk-hidden@m" width="300" height="298"></canvas>
+                                                                    <img src="../assets/images/collections/19.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-visible@m">
+                                                    <div>
+                                                        <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
+                                                            <div class="uk-panel uk-overflow-hidden uk-radius-large">
+                                                                <canvas width="600" height="800"></canvas>
+                                                                <img src="../assets/images/collections/10.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!--Why Choose us start-->
+            <div id="uni_minting" class="uni-minting uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <div class="uk-panel">
+                        <div class="uk-grid uk-grid-xlarge@m uk-flex-middle" data-uk-grid="">
+                            <div class="uk-width-6-12@m">
+                                <div class="uk-panel">
+                                    <span class="uk-text-overline uk-text-gradient">How to mint</span>
+                                    <h1 class="uk-h2 uk-h1@s uk-heading-d3@m">
+                                        How to <br>
+                                        <span class="uk-text-gradient">Nerko's</span> works
+                                    </h1>
+                                    <p class="uk-text-muted uk-text-large@m">We make it easy to Discover, Invest and manage all your NFTs at one place, looked up one of the more obscure.Find the right NFT collections to buy within the platform.</p>
+                                    <a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                        <span>Discover More</span>
+                                        <i class="uk-icon-small unicon-arrow-right uk-text-bold"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uk-width-6-12@m">
+                                <div class="uk-grid uk-grid-match uk-child-width-1-2@s" data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-radius uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-gray-90">
+                                            <div class="uk-grid uk-grid-xsmall uk-flex-middle" data-uk-grid="">
+                                                <div class="uk-panel uk-width-1-4">
+                                                    <img src="/assets/images/icon-01.png" alt="Icon">
+                                                </div>
+                                                <div class="uk-panel uk-width-expand@m">
+                                                    <h5 class="uk-h5">Connect your wallet</h5>
+                                                </div>
+                                                <p>Use Trust Wallet, Metamask or any wallet to connect to the app..</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-radius uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-gray-90">
+                                            <div class="uk-grid uk-grid-xsmall uk-flex-middle" data-uk-grid="">
+                                                <div class="uk-panel uk-width-1-4">
+                                                    <img src="/assets/images/icon-02.png" alt="Icon">
+                                                </div>
+                                                <div class="uk-panel uk-width-expand@m">
+                                                    <h5 class="uk-h5">Select your quantity</h5>
+                                                </div>
+                                                <p>Upload your NFTs and set a title, description and price.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-radius uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-gray-90">
+                                            <div class="uk-grid uk-grid-xsmall uk-flex-middle" data-uk-grid="">
+                                                <div class="uk-panel uk-width-1-4">
+                                                    <img src="/assets/images/icon-03.png" alt="Icon">
+                                                </div>
+                                                <div class="uk-panel uk-width-expand@m">
+                                                    <h5 class="uk-h5">Confirm the transaction</h5>
+                                                </div>
+                                                <p>Earn ETH and BIT for all your NFTs that you sell on our marketplace.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-radius uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-gray-90">
+                                            <div class="uk-grid uk-grid uk-grid-xsmall uk-flex-middle" data-uk-grid="">
+                                                <div class="uk-panel uk-width-1-4">
+                                                    <img src="/assets/images/icon-04.png" alt="Icon">
+                                                </div>
+                                                <div class="uk-panel uk-width-expand@m">
+                                                    <h5 class="uk-h5">Receive your NFTs</h5>
+                                                </div>
+                                                <p>Latin professor at Hampden-Sydney College in Virginia Lorem, ipsum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Why Choose us start end-->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!-- How it works start-->
+            <div id="uni_about" class="uni-about uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <div class="uk-panel">
+                        <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
+                            <div>
+                                <div class="uk-panel">
+                                    <div class="uk-grid-large uk-grid-xlarge@m uk-flex-middle uk-grid" data-uk-grid="">
+                                        <div class="uk-width-6-12@m">
+                                            <div class="uk-panel">
+                                                <h3 class="uk-h2 uk-h1@s uk-heading-d3@m">
+                                                    Create your <br>
+                                                    <span class="uk-text-gradient">own NFT</span>
+                                                </h3>
+                                                <p class="uk-text-large">content creation optimized for social media engagment and tangible results.</p>
+                                                <p class="uk-text-large">social media marketing through turn key influencer marketing compaigns and social media account managment to grow your digital art and drive your collection</p>
+                                                <div class="uk-grid uk-grid-large@m uk-grid-match uk-child-width-1-2@s uk-margin-medium-top uk-margin-large-top@m" data-uk-grid="">
+                                                    <div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m uk-flex-middle" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        <i class="uk-icon-small uk-icon-medium@m unicon-finance uk-text-white"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <h5 class="uk-h5 uk-margin-xsmall">Measure</h5>
+                                                                    <span class="uk-text-small@m">Collections art</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m uk-flex-middle" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        <i class="uk-icon-small uk-icon-medium@m unicon-model uk-text-white"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <h5 class="uk-h5 uk-margin-xsmall">Integrity</h5>
+                                                                    <span class="uk-text-small@m">Difference in Floor</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m uk-flex-middle" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        <i class="uk-icon-small uk-icon-medium@m unicon-navaid-military uk-text-white"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <h5 class="uk-h5 uk-margin-xsmall">Niche</h5>
+                                                                    <span class="uk-text-small@m">Good target</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="uk-panel">
+                                                            <div class="uk-grid uk-grid-xsmall uk-grid-small@m uk-flex-middle" data-uk-grid="">
+                                                                <div>
+                                                                    <div class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center">
+                                                                        <i class="uk-icon-small uk-icon-medium@m unicon-fingerprint-recognition uk-text-white"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-expand">
+                                                                    <h6 class="uk-h5 uk-margin-xsmall">Authentic</h6>
+                                                                    <span class="uk-text-small@m">Estimated Value</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-6-12@m">
+                                            <div class="uk-panel">
+                                                <div class="uk-flex-middle uk-grid" data-uk-grid="">
+                                                    <div class="uk-width-3-8">
+                                                        <div class="uk-panel uk-card uk-card-xsmall uk-padding-medium-horizontal uk-radius-medium uk-box-shadow-xsmall dark:uk-background-white-5 uk-text-center">
+                                                            <h5 class="uk-h4 uk-h2@m uk-margin-xsmall uk-text-gradient">90%</h5>
+                                                            <span>Sync and track</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-panel">
+                                                            <h6 class="uk-h6 uk-h5@s">Multiple Chains, One Home</h6>
+                                                            <p>Find the right NFT collections to buy within the platform.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                            <div class="uk-panel">
+                                                <div class="uk-flex-middle uk-grid" data-uk-grid="">
+                                                    <div class="uk-width-3-8">
+                                                        <div class="uk-panel uk-card uk-card-xsmall uk-padding-medium-horizontal uk-radius-medium uk-box-shadow-xsmall dark:uk-background-white-5 uk-text-center">
+                                                            <h5 class="uk-h4 uk-h2@m uk-margin-xsmall uk-text-gradient">2.5X</h5>
+                                                            <span>Estimated value.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-panel">
+                                                            <h6 class="uk-h6 uk-h5@s">Choose a platform to sell your NFT</h6>
+                                                            <p>Multiple Chains, One Home. Stack up all your NFTs from across blockchains.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                            <div class="uk-panel">
+                                                <div class="uk-flex-middle uk-grid" data-uk-grid="">
+                                                    <div class="uk-width-3-8">
+                                                        <div class="uk-panel uk-card uk-card-xsmall uk-padding-medium-horizontal uk-radius-medium uk-box-shadow-xsmall dark:uk-background-white-5 uk-text-center">
+                                                            <h5 class="uk-h4 uk-h2@m uk-margin-xsmall uk-text-gradient">50K+</h5>
+                                                            <span>Of members.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-panel">
+                                                            <h6 class="uk-h6 uk-h5@s">Join our community</h6>
+                                                            <p>We make it easy to Discover, Invest and manage all your NFTs at one place.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How it works end-->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!-- explore start -->
+            <div id="uni_collection" class="uni-collection uk-section uk-section-large@m uk-panel uk-overflow-hidden uk-padding-2xlarge-bottom@m swiper-parent">
+                <div class="uk-container">
+                    <div class="uk-panel uk-overflow-hidden">
+                        <div class="uk-grid uk-grid-2xlarge@m uk-flex-between uk-flex-middle" data-uk-grid="">
+                            <div class="uk-width-5-12@m">
+                                <header class="uk-grid-xsmall uk-child-width-auto@m uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;">
+                                    <div class="uk-panel">
+                                        <span class="uk-text-overline uk-text-gradient">Digital art's</span>
+                                        <h2 class="uk-h2 uk-h1@s uk-heading-d3@m">Nerko's <span class="uk-text-gradient">collection</span></h2>
+                                        <p class="uk-text-muted uk-text-large">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
+                                        <div class="uk-panel uk-margin-large uk-margin-xlarge-top@m">
+                                            <div class="uk-grid uk-grid-large@m uk-grid-match uk-flex-around uk-child-width-1-2@s" data-uk-grid="">
+                                                <div>
+                                                    <div class="uk-grid uk-grid-small" data-uk-grid="">
+                                                        <div class="uk-width-auto">
+                                                            <i class="uk-icon uk-icon-large uk-icon-xlarge@m unicon-rocket uk-text-gradient"></i>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <h5 class="uk-h6 uk-h5@m">Generate Revenue</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-grid uk-grid-small" data-uk-grid="">
+                                                        <div class="uk-width-auto">
+                                                            <i class="uk-icon uk-icon-large uk-icon-xlarge@m unicon-theater uk-text-gradient"></i>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <h5 class="uk-h6 uk-h5@m">Advertise Nerko's</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div class="uk-width-7-12@m">
+                                <div class="swiper swiper-match" data-swiper="items: 1.075; gap: 5; center: true; center-bounds: true;" data-swiper-m="items: 2; gap: 30; center: false;">
+                                    <div class="swiper-wrapper uk-margin-medium-bottom">
+                                        <div class="swiper-slide">
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-xlarge@m">
+                                                <canvas width="600" height="800"></canvas>
+                                                <img src="../assets/images/apes/04.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-xlarge@m">
+                                                <canvas width="600" height="800"></canvas>
+                                                <img src="../assets/images/apes/05.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-xlarge@m">
+                                                <canvas width="600" height="800"></canvas>
+                                                <img src="../assets/images/apes/06.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-xlarge@m">
+                                                <canvas width="600" height="800"></canvas>
+                                                <img src="../assets/images/apes/07.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-xlarge@m">
+                                                <canvas width="600" height="800"></canvas>
+                                                <img src="../assets/images/apes/08.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-xlarge@m">
+                                                <canvas width="600" height="800"></canvas>
+                                                <img src="../assets/images/apes/01.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pagination -->
+                                    <div class="swiper-pagination swiper-dotnav"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- explore end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!-- Roadmap start -->
+            <div id="uni_roadmap" class="uni-roadmap uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <div class="uk-grid uk-flex-between uk-grid-match" data-uk-grid="">
+                        <div class="uk-width-4-12@m">
+                            <div class="uk-panel">
+                                <span class="uk-text-overline uk-text-gradient">Nerko's work</span>
+                                <h3 class="uk-h2 uk-h1@s uk-heading-d3@m">Our <span class="uk-text-gradient">Roadmap</span></h3>
+                                <p class="uk-text-muted uk-text-large">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
+                                <hr class="uk-margin-medium@m">
+                                <ul class="uk-list uk-text-small uk-text-medium@m">
+                                    <li class="uk-flex-middle"><i class="uk-icon uk-icon-xsmall uk-icon-small@m unicon-checkmark-outline uk-margin-xsmall-right uk-text-gradient"></i> Release website and logo</li>
+                                    <li class="uk-flex-middle"><i class="uk-icon uk-icon-xsmall uk-icon-small@m unicon-checkmark-outline uk-margin-xsmall-right uk-text-gradient"></i> Grow community</li>
+                                    <li class="uk-flex-middle"><i class="uk-icon uk-icon-xsmall uk-icon-small@m unicon-checkmark-outline uk-margin-xsmall-right uk-text-gradient"></i> whitelist launch</li>
+                                    <li class="uk-flex-middle"><i class="uk-icon uk-icon-xsmall uk-icon-small@m unicon-checkmark-outline uk-margin-xsmall-right uk-text-gradient"></i> Launch the project</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uk-width-7-12@m">
+                            <div class="uk-panel">
+                                <div class="uk-grid uk-grid-xlarge uk-child-width-1-2@s" data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uni-content">
+                                            <span class="uk-text-3xlarge uk-flex-center uk-flex-column uk-flex-middle uk-background-gradient uk-radius-large uk-text-gray-10">01</span>
+                                            <h4 class="uk-h4 uk-h3@m">New Nfts</h4>
+                                            <p class="uk-text-medium uk-text-muted">Per-Sale Minting is opened for our Whitelisted members. The price for whitelist minting will be 0.5 SOL.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uni-content">
+                                            <span class="uk-text-3xlarge uk-flex-center uk-flex-column uk-flex-middle uk-background-gradient uk-radius-large uk-text-gray-10">02</span>
+                                            <h4 class="uk-h4 uk-h3@m">Whitelist Minting</h4>
+                                            <p class="uk-text-medium uk-text-muted">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs..</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uni-content">
+                                            <span class="uk-text-3xlarge uk-flex-center uk-flex-column uk-flex-middle uk-background-gradient uk-radius-large uk-text-gray-10">03</span>
+                                            <h4 class="uk-h4 uk-h3@m">Whitelist launch</h4>
+                                            <p class="uk-text-medium uk-text-muted">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uni-content">
+                                            <span class="uk-text-3xlarge uk-flex-center uk-flex-column uk-flex-middle uk-background-gradient uk-radius-large uk-text-gray-10">04</span>
+                                            <h4 class="uk-h4 uk-h3@m">Metaverse</h4>
+                                            <p class="uk-text-medium uk-text-muted">A complete account of the system, and expound the actual teachings of the great explorer of the truth.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Roadmap end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!-- newsletter start -->
+            <div id="uni_newsletter" class="uni-newsletter uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <div class="uk-text-center uk-flex-center">
+                        <div class="uk-width-3xlarge">
+                            <div class="uk-panel">
+                                <h3 class="uk-h2 uk-h1@s uk-heading-d3@m">We make it easy <span class="uk-text-gradient">to discover</span></h3>
+                                <p class="uk-text-muted uk-text-large">Subscribe to our super-rare and exclusive drops & collectibles</p>
+                            </div>
+                            <div class="uk-panel uk-margin-large uk-margin-xlarge-top@m">
+                                <div class="uk-grid uk-child-width-1-2@s" data-uk-grid="">
+                                    <div>
+                                        <div class="uk-card uk-card-small uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                            <div class="uk-grid uk-grid-small@m uk-flex-middle uk-grid-match" data-uk-grid="">
+                                                <div class="uk-width-auto">
+                                                    <div class="uni-cta-icon uk-panel uk-background-primary uk-flex-column uk-flex-middle uk-flex-center">
+                                                        <span class="uk-icon-medium unicon-logo-twitter uk-text-gray-10"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-panel uk-width-expand uk-text-left">
+                                                    <h3 class="uk-h6 uk-h5@m uk-margin-2xsmall">join with us on twitter</h3>
+                                                    <p class="uk-margin-remove">support_12@twitter.com</p>
+                                                </div>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-small uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                            <div class="uk-grid uk-grid-small@m uk-flex-middle uk-grid-match" data-uk-grid="">
+                                                <div class="uk-width-auto">
+                                                    <div class="uni-cta-icon uk-panel uk-background-primary uk-flex-column uk-flex-middle uk-flex-center">
+                                                        <span class="uk-icon-medium unicon-logo-discord uk-text-gray-10"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-panel uk-width-expand uk-text-left">
+                                                    <h3 class="uk-h6 uk-h5@m uk-margin-2xsmall">Join with us on discord</h3>
+                                                    <p class="uk-margin-remove">support_12@discord.org</p>
+                                                </div>
+                                            </div>
+                                            <a class="uk-position-cover uk-position-z-index" href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- newsletter end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!-- Teams start -->
+            <div id="uni_team" class="uni-team uk-section uk-section-large@m uk-panel uk-overflow-hidden">
+                <div class="uk-container">
+                    <div class="uk-grid uk-flex-middle" data-uk-grid="">
+                        <div class="uk-width-5-12@m">
+                            <span class="uk-text-overline uk-text-gradient">Nerko's Crew</span>
+                            <h3 class="uk-h2 uk-h1@s uk-heading-d3@m">
+                                Meet <br>
+                                <span class="uk-text-gradient">Our team</span>
+                            </h3>
+                            <p class="uk-text-muted uk-text-large">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
+                            <p class="uk-text-muted uk-text-large">Our support team delivers first-class customer support around the clock we're to answer any question and help every step of the way.</p>
+                            <a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                <span>Discover More</span>
+                                <i class="uk-icon-small unicon-arrow-right uk-text-bold"></i>
+                            </a>
+                        </div>
+                        <div class="uk-width-7-12@m">
+                            <div>
+                                <div class="uk-grid-small uk-grid@m uk-child-width-1-3 uk-grid" data-uk-grid="parallax: 55;">
+                                    <div>
+                                        <div class="uk-card uk-card-2xsmall uk-radius-medium uk-box-shadow-xsmall uk-background-white dark:uk-background-white-5">
+                                            <div class="uk-panel uk-overflow-hidden uk-radius-medium">
+                                                <canvas width="180" height="250"></canvas>
+                                                <img class="uk-cover" src="/assets/images/collections/01.jpg" alt="Create your own NFT" data-uk-cover="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-2xsmall uk-radius-medium uk-box-shadow-xsmall uk-background-white dark:uk-background-white-5">
+                                            <div class="uk-panel uk-overflow-hidden uk-radius-medium">
+                                                <canvas width="180" height="250"></canvas>
+                                                <img class="uk-cover" src="/assets/images/collections/02.jpg" alt="Create your own NFT" data-uk-cover="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-2xsmall uk-radius-medium uk-box-shadow-xsmall uk-background-white dark:uk-background-white-5">
+                                            <div class="uk-panel uk-overflow-hidden uk-radius-medium">
+                                                <canvas width="180" height="250"></canvas>
+                                                <img class="uk-cover" src="/assets/images/collections/03.jpg" alt="Create your own NFT" data-uk-cover="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-2xsmall uk-radius-medium uk-box-shadow-xsmall uk-background-white dark:uk-background-white-5">
+                                            <div class="uk-panel uk-overflow-hidden uk-radius-medium">
+                                                <canvas width="180" height="250"></canvas>
+                                                <img class="uk-cover" src="/assets/images/collections/04.jpg" alt="Create your own NFT" data-uk-cover="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-2xsmall uk-radius-medium uk-box-shadow-xsmall uk-background-white dark:uk-background-white-5">
+                                            <div class="uk-panel uk-overflow-hidden uk-radius-medium">
+                                                <canvas width="180" height="250"></canvas>
+                                                <img class="uk-cover" src="/assets/images/collections/05.jpg" alt="Create your own NFT" data-uk-cover="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-2xsmall uk-radius-medium uk-box-shadow-xsmall uk-background-white dark:uk-background-white-5">
+                                            <div class="uk-panel uk-overflow-hidden uk-radius-medium">
+                                                <canvas width="180" height="250"></canvas>
+                                                <img class="uk-cover" src="/assets/images/collections/06.jpg" alt="Create your own NFT" data-uk-cover="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teams end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+
+            <!-- FaQ start -->
+            <div id="uni_faq" class="uni-faq uk-section uk-section-large@m uk-panel uk-overflow-hidden">
+                <div class="uk-container">
+                    <div class="uk-panel uk-margin-2xlarge-top@m">
+                        <div class="uk-grid uk-grid-xlarge uk-flex-between uk-child-width-1-2@m" data-uk-grid="">
+                            <div>
+                                <div class="uk-panel">
+                                    <span class="uk-text-overline uk-text-gradient">Frequntly asked question</span>
+                                    <h2 class="uk-h2 uk-h1@s uk-heading-d3@m">
+                                        Quick <br>
+                                        <span class="uk-text-gradient">Questions ?</span>
+                                    </h2>
+                                    <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                        <ul class="uk-card uk-radius uk-radius-large@m" data-uk-accordion="collapsible: true">
+                                            <li>
+                                                <a class="uk-accordion-title uk-h5@m" href="#">What is Nerko's NFT Collection?</a>
+                                                <div class="uk-accordion-content uk-padding-small-bottom">
+                                                    <p class="uk-text-small uk-text-large@m uk-text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title uk-h5@m" href="#">How we can buy and invest NFT?</a>
+                                                <div class="uk-accordion-content uk-padding-small-bottom">
+                                                    <p class="uk-text-small uk-text-large@m uk-text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title uk-h5@m" href="#">Why we should choose Nerko's NFT?</a>
+                                                <div class="uk-accordion-content uk-padding-small-bottom">
+                                                    <p class="uk-text-small uk-text-large@m uk-text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title uk-h5@m" href="#">Where we can buy and sell NFts?</a>
+                                                <div class="uk-accordion-content uk-padding-small-bottom">
+                                                    <p class="uk-text-small uk-text-large@m uk-text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title uk-h5@m" href="#">How secure is this token?</a>
+                                                <div class="uk-accordion-content uk-padding-small-bottom">
+                                                    <p class="uk-text-small uk-text-large@m uk-text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title uk-h5@m" href="#">What is your contract address?</a>
+                                                <div class="uk-accordion-content uk-padding-small-bottom">
+                                                    <p class="uk-text-small uk-text-large@m uk-text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-small uk-card-medium@m uk-radius uk-radius-medium@m uk-box-shadow-xsmall dark:uk-background-gray-90">
+                                    <div class="uk-panel uk-text-center">
+                                        <h3 class="uk-h4 uk-h3@s uk-text-gradient">Still have a question ?</h3>
+                                        <p class="uk-text-large uk-text-gray-70 dark:uk-text-gray-10">If you still have something in mind let's talk more about your ideas .</p>
+                                    </div>
+                                    <div class="uni-form uk-panel uk-margin-top uk-margin-large-top@m">
+                                        <form action="?" class="uk-grid uk-grid-small uk-child-width-1-1@m" data-uk-grid>
+                                            <div>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input uk-form-medium uk-text-bold" type="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Your Number">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-form-controls">
+                                                    <textarea class="uk-textarea uk-padding uk-height-xsmall uk-text-bold" rows="5" placeholder="Type your message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-form-controls uk-flex-center">
+                                                    <button type="submit" class="uk-button uk-button-primary uk-width-xsmall">Send message</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FaQ end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-xlarge" src="/assets/images/divider-01.svg" alt="Divider">
+        </div>
+
+        <!-- Wrapper end -->
+
+        <!-- Footer start -->
+        <footer class="uni-footer uk-section uk-section-xlarge@m uk-panel">
+            <div class="uk-position-cover uk-background-cover uk-visible@m" data-src="../assets/images/footer-bg.png" data-uk-img></div>
+            <div class="uk-container">
+                <div class="uk-panel">
+                    <div class="uk-grid uk-flex-center uk-text-center" data-uk-grid>
+                        <div class="uk-width-large@m">
+                            <div class="uk-panel uk-position-z-index">
+                                <ul class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-70">
+                                    <li>
+                                        <a href="https://twitter.com/unistudioco"><span class="uk-icon uk-icon-large@m unicon-logo-twitter"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.com/unistudioco"><span class="uk-icon uk-icon-large@m unicon-logo-discord"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/unistudioco"><span class="uk-icon uk-icon-large@m unicon-logo-instagram"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://facebook.com/unistudioco"><span class="uk-icon uk-icon-large@m unicon-logo-facebook"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://youtube.com/unistudioco"><span class="uk-icon uk-icon-large@m unicon-logo-youtube"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-text-small uk-margin-medium-top">
+                        <div class="uk-grid uk-child-width-1-1@m uk-flex-center uk-text-center" data-uk-grid>
+                            <div>
+                                <ul class="uk-subnav uk-text-muted uk-flex-center">
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="terms.html">Terms of use</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="uk-text-muted">© 2022 Nerko. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include scripts -->
+        <script defer src="../assets/js/jquery.min.js"></script>
+        <script defer src="../assets/js/swiper-bundle.min.js"></script>
+        <script defer src="../assets/js/feather.min.js"></script>
+        <script defer src="../assets/js/typed.min.js"></script>
+        <script defer src="../assets/js/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/swiper-helper.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+        <script>
+            // Schema toggle via URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const getSchema = urlParams.get("schema");
+            if (getSchema === "dark") {
+                document.documentElement.classList.add("uk-dark");
+                localStorage.setItem("darkMode", "1");
+            } else if (getSchema === "light") {
+                document.documentElement.classList.remove("uk-dark");
+                localStorage.setItem("darkMode", "0");
+            }
+        </script>
+    </body>
+</html>

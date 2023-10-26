@@ -1,0 +1,220 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* fonts */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* fonts */
+
+/* Container */
+
+.container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-section {
+  background-image: url("11.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.hero-section-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-section .container {
+  height: 100%;
+}
+
+.square {
+  margin-left: auto;
+  max-width: 625px;
+  padding: 70px;
+  clip-path: polygon(10% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 0 100%, 0% 80%, 0% 15%);
+  background-color: #f8f200;
+}
+
+.square-title {
+  font-size: 62px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.square-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f200;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  background: #000;
+  padding: 10px 40px
+}
+
+
+/* section about */
+
+.about-sectiont{
+padding-top: 70px 0;
+}
+
+.about-title{
+  font-size: 62px;
+  line-height: normal;
+  margin: 25px 25px;
+}
+
+.about-text-accent{
+  color: #52DEDC;
+  font-weight: 700;
+}
+
+.about-text{
+  margin-bottom: 70px;
+}
+
+.about-images{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about-image-1{
+  margin-bottom: 30px;
+}
+/* about-section */
+
+/* footer-section */
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-image{
+  display: flex;
+  gap: 30px;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.niz{
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+/* footer-section */
+
